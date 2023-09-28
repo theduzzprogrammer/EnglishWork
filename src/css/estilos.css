@@ -1,0 +1,190 @@
+/* Estilo geral para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para o conteúdo principal (main) */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os artigos */
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Estilo para links nos artigos */
+article a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a seção de categorias */
+#categorias {
+    font-size: 20px;
+    color: #333;
+}
+
+#categorias a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+#categorias a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a seção de obras de Shakespeare */
+section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Estilo para os contêineres de imagem */
+.imagem-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.imagem-container img {
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.imagem-container p {
+    margin: 5px;
+}
+
+.imagem-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo para o rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para a imagem de Shakespeare */
+article img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+/* Estilo para a lista ordenada (ol) */
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para cada item de lista (li) */
+ol li {
+    margin-bottom: 20px;
+}
+
+/* Estilo para a parte em Português */
+.portuguese {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo para a parte em Inglês */
+.english {
+    display: block;
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Adicione um espaço entre as traduções */
+.english::before {
+    content: " | ";
+    color: #999;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* Estilo responsivo para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Ajuste o tamanho da fonte do cabeçalho */
+    header h1 {
+        font-size: 28px;
+    }
+
+    /* Ajuste o tamanho da fonte dos artigos */
+    article h2 {
+        font-size: 20px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+
+    /* Faça com que as imagens se ajustem ao tamanho da tela */
+    .imagem-container img {
+        max-width: 100%;
+    }
+
+    /* Alinhe o texto do rodapé ao centro */
+    footer {
+        text-align: center;
+    }
+}
